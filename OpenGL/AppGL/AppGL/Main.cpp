@@ -2,39 +2,59 @@
 #include "GL\freeglut.h"
 #include <iostream>
 
+#include "Core\TRunSample.h"
+#include "Samples\SimpleTriangle.h"
 
-void renderScene(void)
-{
 
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glClearColor(1.0, 0.0, 0.0, 1.0); //clear red
+using namespace std;
 
-	glutSwapBuffers();
-}
-
+typedef TRunSample<SimpleTriangle> RunSample;
 
 int main(int argc, char **argv)
 {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
+	glutInitContextVersion(4, 5);
+	glutInitContextFlags(GLUT_CORE_PROFILE | GLUT_DEBUG);
+	glutInitContextProfile(GLUT_FORWARD_COMPATIBLE);
 	glutInitWindowPosition(500, 500);
 	glutInitWindowSize(800, 600);
 	glutCreateWindow("OpenGL First Window");
 
-	glewInit();
+	glewExperimental = GL_TRUE;
+	GLenum err = glewInit();
+	if (GLEW_OK != err)
+	{
+		cerr << "Error: " << glewGetErrorString(err) << endl;
+		return (int)err;
+	}
+
+	cout << "\tUsing glew " << glewGetString(GLEW_VERSION) << endl;
+	cout << "\tVendor: " << glGetString(GL_VENDOR) << endl;
+	cout << "\tRenderer: " << glGetString(GL_RENDERER) << endl;
+	cout << "\tVersion: " << glGetString(GL_VERSION) << endl;
+	cout << "\tGLSL: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << endl;
+
 	if (glewIsSupported("GL_VERSION_4_5"))
 	{
-		std::cout << " GLEW Version is 4.5\n ";
+		std::cout << "\tGLEW Version is 4.5\n ";
 	}
 	else
 	{
-		std::cout << "GLEW 4.5 not supported\n ";
+		std::cout << "\tGLEW 4.5 not supported\n ";
 	}
 
 	glEnable(GL_DEPTH_TEST);
 
+	RunSample runsample;
+
+	RunSample::OnInit();
+
 	// register callbacks
-	glutDisplayFunc(renderScene);
+	glutCloseFunc(RunSample::OnShutdown);
+	glutDisplayFunc(RunSample::OnRender);
+	glutReshapeFunc(RunSample::OnResize);
+
 	glutMainLoop();
 
 	return 0;

@@ -13,13 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers sources\Core">
+      <UniqueIdentifier>{39d6f4bc-c5dc-421c-8327-117e732d49ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Samples">
+      <UniqueIdentifier>{0a17aff4-e781-421e-8798-d0053a442aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Samples\Shaders">
+      <UniqueIdentifier>{7e8ece68-59df-414f-a699-413bb887e879}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Shader.cpp">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Samples\SimpleTriangle.cpp">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Samples\Shaders\SimpleTriangle_shader.frag">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+    <None Include="Samples\Shaders\SimpleTriangle_shader.vert">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Shader.h">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Macros.h">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Samples\SimpleTriangle.h">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TRunSample.h">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
