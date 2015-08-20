@@ -3,8 +3,21 @@
 #ifndef CORE_TRUNSAMPLE_H
 #define CORE_TRUNSAMPLE_H
 
+class RunSample
+{
+public:
+
+	RunSample() {}
+	virtual ~RunSample() {}
+
+	virtual void Activate() = 0;
+	virtual void Unactivate() = 0;
+
+};
+
+
 template<typename TSample>
-class TRunSample
+class TRunSample : public RunSample
 {
 public:
 
@@ -16,6 +29,31 @@ public:
 	~TRunSample()
 	{
 
+	}
+
+	virtual void Activate()
+	{
+		TRunSample<TSample>::OnInit();
+
+		// register callbacks
+		glutCloseFunc(TRunSample<TSample>::OnShutdown);
+		glutDisplayFunc(TRunSample<TSample>::OnRender);
+		glutReshapeFunc(TRunSample<TSample>::OnResize);
+		glutMouseFunc(TRunSample<TSample>::OnMouseDown);
+		glutMotionFunc(TRunSample<TSample>::OnMouseMove);
+		glutIdleFunc(TRunSample<TSample>::OnIdle);
+	}
+
+	virtual void Unactivate()
+	{
+		glutCloseFunc(nullptr);
+		glutDisplayFunc(nullptr);
+		glutReshapeFunc(nullptr);
+		glutMouseFunc(nullptr);
+		glutMotionFunc(nullptr);
+		glutIdleFunc(nullptr);
+
+		TRunSample<TSample>::OnShutdown();
 	}
 
 	static void OnRender()
@@ -36,6 +74,21 @@ public:
 	static void OnInit()
 	{
 		_sampleInstance->OnInit();
+	}
+
+	static void OnIdle()
+	{
+		_sampleInstance->OnIdle();
+	}
+
+	static void OnMouseDown(int button, int s, int x, int y)
+	{
+		_sampleInstance->OnMouseDown(button, s, x, y);
+	}
+
+	static void OnMouseMove(int x, int y)
+	{
+		_sampleInstance->OnMouseMove(x, y);
 	}
 
 private:

@@ -4,11 +4,10 @@
 
 #include "Core\TRunSample.h"
 #include "Samples\SimpleTriangle.h"
+#include "Samples\Ripple.h"
 
 
 using namespace std;
-
-typedef TRunSample<SimpleTriangle> RunSample;
 
 int main(int argc, char **argv)
 {
@@ -17,8 +16,7 @@ int main(int argc, char **argv)
 	glutInitContextVersion(4, 5);
 	glutInitContextFlags(GLUT_CORE_PROFILE | GLUT_DEBUG);
 	glutInitContextProfile(GLUT_FORWARD_COMPATIBLE);
-	glutInitWindowPosition(500, 500);
-	glutInitWindowSize(800, 600);
+	glutInitWindowSize(1280, 960);
 	glutCreateWindow("OpenGL First Window");
 
 	glewExperimental = GL_TRUE;
@@ -46,14 +44,11 @@ int main(int argc, char **argv)
 
 	glEnable(GL_DEPTH_TEST);
 
-	RunSample runsample;
+	TRunSample<SimpleTriangle> simpleTriangleSample;
+	TRunSample<Ripple> rippleSample;
 
-	RunSample::OnInit();
-
-	// register callbacks
-	glutCloseFunc(RunSample::OnShutdown);
-	glutDisplayFunc(RunSample::OnRender);
-	glutReshapeFunc(RunSample::OnResize);
+	//simpleTriangleSample.Activate();
+	rippleSample.Activate();
 
 	glutMainLoop();
 

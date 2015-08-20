@@ -33,6 +33,9 @@
     <ClCompile Include="Samples\SimpleTriangle.cpp">
       <Filter>Fichiers sources\Samples</Filter>
     </ClCompile>
+    <ClCompile Include="Samples\Ripple.cpp">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -40,6 +43,12 @@
       <Filter>Fichiers sources\Samples\Shaders</Filter>
     </None>
     <None Include="Samples\Shaders\SimpleTriangle_shader.vert">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+    <None Include="Samples\Shaders\Ripple_shader.frag">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+    <None Include="Samples\Shaders\Ripple_shader.vert">
       <Filter>Fichiers sources\Samples\Shaders</Filter>
     </None>
   </ItemGroup>
@@ -55,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="Core\TRunSample.h">
       <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Samples\Ripple.h">
+      <Filter>Fichiers sources\Samples</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

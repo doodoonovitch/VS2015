@@ -90,6 +90,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)AppGL;$(SolutionDir)packages\glm.0.9.6.3\build\native\include;$(SolutionDir)packages\nupengl.core.0.0.0.1\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -103,6 +104,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)AppGL;$(SolutionDir)packages\glm.0.9.6.3\build\native\include;$(SolutionDir)packages\nupengl.core.0.0.0.1\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -118,6 +120,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)AppGL;$(SolutionDir)packages\glm.0.9.6.3\build\native\include;$(SolutionDir)packages\nupengl.core.0.0.0.1\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -135,6 +138,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)AppGL;$(SolutionDir)packages\glm.0.9.6.3\build\native\include;$(SolutionDir)packages\nupengl.core.0.0.0.1\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -147,10 +151,19 @@
   <ItemGroup>
     <ClCompile Include="Core\Shader.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Samples\Ripple.cpp" />
     <ClCompile Include="Samples\SimpleTriangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Samples\Shaders\Ripple_shader.frag">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Script</FileType>
+    </None>
+    <None Include="Samples\Shaders\Ripple_shader.vert">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Script</FileType>
+    </None>
     <None Include="Samples\Shaders\SimpleTriangle_shader.frag">
       <DeploymentContent>true</DeploymentContent>
       <FileType>Script</FileType>
@@ -164,6 +177,7 @@
     <ClInclude Include="Core\Macros.h" />
     <ClInclude Include="Core\TRunSample.h" />
     <ClInclude Include="Core\Shader.h" />
+    <ClInclude Include="Samples\Ripple.h" />
     <ClInclude Include="Samples\SimpleTriangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

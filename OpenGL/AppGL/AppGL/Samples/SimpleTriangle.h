@@ -27,6 +27,10 @@ public:
 
 	void OnInit();
 
+	void OnIdle() {}
+	void OnMouseDown(int button, int s, int x, int y) {}
+	void OnMouseMove(int x, int y) {}
+
 private:
 
 	//out vertex struct for interleaved attributes
