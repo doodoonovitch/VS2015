@@ -30,6 +30,7 @@ public:
 	void OnIdle() {}
 	void OnMouseDown(int button, int s, int x, int y) {}
 	void OnMouseMove(int x, int y) {}
+	void OnKey(unsigned char key, int x, int y) {}
 
 private:
 

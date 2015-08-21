@@ -39,6 +39,7 @@ public:
 		glutCloseFunc(TRunSample<TSample>::OnShutdown);
 		glutDisplayFunc(TRunSample<TSample>::OnRender);
 		glutReshapeFunc(TRunSample<TSample>::OnResize);
+		glutKeyboardFunc(TRunSample<TSample>::OnKey);
 		glutMouseFunc(TRunSample<TSample>::OnMouseDown);
 		glutMotionFunc(TRunSample<TSample>::OnMouseMove);
 		glutIdleFunc(TRunSample<TSample>::OnIdle);
@@ -49,6 +50,7 @@ public:
 		glutCloseFunc(nullptr);
 		glutDisplayFunc(nullptr);
 		glutReshapeFunc(nullptr);
+		glutKeyboardFunc(nullptr);
 		glutMouseFunc(nullptr);
 		glutMotionFunc(nullptr);
 		glutIdleFunc(nullptr);
@@ -89,6 +91,11 @@ public:
 	static void OnMouseMove(int x, int y)
 	{
 		_sampleInstance->OnMouseMove(x, y);
+	}
+
+	static void OnKey(unsigned char key, int x, int y)
+	{
+		_sampleInstance->OnKey(key, x, y);
 	}
 
 private:

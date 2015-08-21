@@ -52,7 +52,7 @@ void Ripple::OnRender(void)
 	glm::mat4 T = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, _dist));
 	glm::mat4 Rx = glm::rotate(T, _rX, glm::vec3(1.0f, 0.0f, 0.0f));
 	glm::mat4 MV = glm::rotate(Rx, _rY, glm::vec3(0.0f, 1.0f, 0.0f));
-	glm::mat4 MVP = _P * _MV;
+	glm::mat4 MVP = _P * MV;
 
 	//bind the shader
 	_shader.Use();
@@ -178,7 +178,6 @@ Ripple::Ripple()
 	_vertices = new glm::vec3[TOTAL_VERTICES];
 	_indices = new GLushort[TOTAL_INDICES];
 	_P = glm::mat4(1);
-	_MV = glm::mat4(1);
 }
 
 Ripple::~Ripple()

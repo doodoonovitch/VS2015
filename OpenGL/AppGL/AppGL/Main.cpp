@@ -5,6 +5,7 @@
 #include "Core\TRunSample.h"
 #include "Samples\SimpleTriangle.h"
 #include "Samples\Ripple.h"
+#include "Samples\SubdivisionGeometry.h"
 
 
 using namespace std;
@@ -46,9 +47,11 @@ int main(int argc, char **argv)
 
 	TRunSample<SimpleTriangle> simpleTriangleSample;
 	TRunSample<Ripple> rippleSample;
+	TRunSample<SubdivisionGeometry> subdivisionGeometrySample;
 
 	//simpleTriangleSample.Activate();
-	rippleSample.Activate();
+	//rippleSample.Activate();
+	subdivisionGeometrySample.Activate();
 
 	glutMainLoop();
 
