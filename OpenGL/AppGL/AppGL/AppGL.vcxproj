@@ -154,6 +154,7 @@
     <ClCompile Include="Samples\Ripple.cpp" />
     <ClCompile Include="Samples\SimpleTriangle.cpp" />
     <ClCompile Include="Samples\SubdivisionGeometry.cpp" />
+    <ClCompile Include="Samples\SubdivisionGeometryInstanced.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -170,6 +171,18 @@
       <FileType>Script</FileType>
     </None>
     <None Include="Samples\Shaders\SimpleTriangle_shader.vert">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Script</FileType>
+    </None>
+    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.frag">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Script</FileType>
+    </None>
+    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.geom">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Script</FileType>
+    </None>
+    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.vert">
       <DeploymentContent>true</DeploymentContent>
       <FileType>Script</FileType>
     </None>
@@ -193,6 +206,7 @@
     <ClInclude Include="Samples\Ripple.h" />
     <ClInclude Include="Samples\SimpleTriangle.h" />
     <ClInclude Include="Samples\SubdivisionGeometry.h" />
+    <ClInclude Include="Samples\SubdivisionGeometryInstanced.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

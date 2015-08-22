@@ -39,6 +39,9 @@
     <ClCompile Include="Samples\SubdivisionGeometry.cpp">
       <Filter>Fichiers sources\Samples</Filter>
     </ClCompile>
+    <ClCompile Include="Samples\SubdivisionGeometryInstanced.cpp">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -63,6 +66,15 @@
     <None Include="Samples\Shaders\SubdivisionGeometry_Shader.vert">
       <Filter>Fichiers sources\Samples\Shaders</Filter>
     </None>
+    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.frag">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.geom">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.vert">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Shader.h">
@@ -81,6 +93,9 @@
       <Filter>Fichiers sources\Samples</Filter>
     </ClInclude>
     <ClInclude Include="Samples\SubdivisionGeometry.h">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="Samples\SubdivisionGeometryInstanced.h">
       <Filter>Fichiers sources\Samples</Filter>
     </ClInclude>
   </ItemGroup>
