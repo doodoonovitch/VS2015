@@ -7,7 +7,7 @@
 #include "Samples\Ripple.h"
 #include "Samples\SubdivisionGeometry.h"
 #include "Samples\SubdivisionGeometryInstanced.h"
-
+#include "Samples\ImageLoader.h"
 
 using namespace std;
 
@@ -50,11 +50,13 @@ int main(int argc, char **argv)
 	TRunSample<Ripple> rippleSample;
 	TRunSample<SubdivisionGeometry> subdivisionGeometrySample;
 	TRunSample<SubdivisionGeometryInstanced> subdivisionGeometryInstancedSample;
+	TRunSample<ImageLoader> imageLoaderSample;
 
 	//simpleTriangleSample.Activate();
 	//rippleSample.Activate();
 	//subdivisionGeometrySample.Activate();
-	subdivisionGeometryInstancedSample.Activate();
+	//subdivisionGeometryInstancedSample.Activate();
+	imageLoaderSample.Activate();
 
 	glutMainLoop();
 

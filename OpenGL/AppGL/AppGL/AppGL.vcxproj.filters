@@ -42,6 +42,9 @@
     <ClCompile Include="Samples\SubdivisionGeometryInstanced.cpp">
       <Filter>Fichiers sources\Samples</Filter>
     </ClCompile>
+    <ClCompile Include="Samples\ImageLoader.cpp">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -66,13 +69,19 @@
     <None Include="Samples\Shaders\SubdivisionGeometry_Shader.vert">
       <Filter>Fichiers sources\Samples\Shaders</Filter>
     </None>
-    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.frag">
+    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.frag">
       <Filter>Fichiers sources\Samples\Shaders</Filter>
     </None>
-    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.geom">
+    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.geom">
       <Filter>Fichiers sources\Samples\Shaders</Filter>
     </None>
-    <None Include="Samples\Shaders\SubdivisioGeometryInstanced_shader.vert">
+    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.vert">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+    <None Include="Samples\Shaders\LoadImage_shader.frag">
+      <Filter>Fichiers sources\Samples\Shaders</Filter>
+    </None>
+    <None Include="Samples\Shaders\LoadImage_shader.vert">
       <Filter>Fichiers sources\Samples\Shaders</Filter>
     </None>
   </ItemGroup>
@@ -96,6 +105,9 @@
       <Filter>Fichiers sources\Samples</Filter>
     </ClInclude>
     <ClInclude Include="Samples\SubdivisionGeometryInstanced.h">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="Samples\ImageLoader.h">
       <Filter>Fichiers sources\Samples</Filter>
     </ClInclude>
   </ItemGroup>
