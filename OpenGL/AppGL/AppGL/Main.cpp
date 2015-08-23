@@ -8,6 +8,7 @@
 #include "Samples\SubdivisionGeometry.h"
 #include "Samples\SubdivisionGeometryInstanced.h"
 #include "Samples\ImageLoader.h"
+#include "Samples\SimpleCamera.h"
 
 using namespace std;
 
@@ -51,12 +52,14 @@ int main(int argc, char **argv)
 	TRunSample<SubdivisionGeometry> subdivisionGeometrySample;
 	TRunSample<SubdivisionGeometryInstanced> subdivisionGeometryInstancedSample;
 	TRunSample<ImageLoader> imageLoaderSample;
+	TRunSample<SimpleCamera> simpleCameraSample;
 
 	//simpleTriangleSample.Activate();
 	//rippleSample.Activate();
 	//subdivisionGeometrySample.Activate();
 	//subdivisionGeometryInstancedSample.Activate();
-	imageLoaderSample.Activate();
+	//imageLoaderSample.Activate();
+	simpleCameraSample.Activate();
 
 	glutMainLoop();
 

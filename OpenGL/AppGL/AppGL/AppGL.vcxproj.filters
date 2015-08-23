@@ -19,8 +19,8 @@
     <Filter Include="Fichiers sources\Samples">
       <UniqueIdentifier>{0a17aff4-e781-421e-8798-d0053a442aa1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Samples\Shaders">
-      <UniqueIdentifier>{7e8ece68-59df-414f-a699-413bb887e879}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Renderables">
+      <UniqueIdentifier>{889f54cc-81e6-4edb-a5b0-c26a6c01b4a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -45,45 +45,27 @@
     <ClCompile Include="Samples\ImageLoader.cpp">
       <Filter>Fichiers sources\Samples</Filter>
     </ClCompile>
+    <ClCompile Include="Core\CameraBase.cpp">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FreeCamera.cpp">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TargetCamera.cpp">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\RenderableObject.cpp">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderables\Grid.cpp">
+      <Filter>Fichiers sources\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Samples\SimpleCamera.cpp">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Samples\Shaders\SimpleTriangle_shader.frag">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\SimpleTriangle_shader.vert">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\Ripple_shader.frag">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\Ripple_shader.vert">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometry_Shader.frag">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometry_Shader.geom">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometry_Shader.vert">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.frag">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.geom">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.vert">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\LoadImage_shader.frag">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
-    <None Include="Samples\Shaders\LoadImage_shader.vert">
-      <Filter>Fichiers sources\Samples\Shaders</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Shader.h">
@@ -108,6 +90,24 @@
       <Filter>Fichiers sources\Samples</Filter>
     </ClInclude>
     <ClInclude Include="Samples\ImageLoader.h">
+      <Filter>Fichiers sources\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CameraBase.h">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FreeCamera.h">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TargetCamera.h">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RenderableObject.h">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderables\Grid.h">
+      <Filter>Fichiers sources\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Samples\SimpleCamera.h">
       <Filter>Fichiers sources\Samples</Filter>
     </ClInclude>
   </ItemGroup>

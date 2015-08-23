@@ -149,71 +149,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core\CameraBase.cpp" />
+    <ClCompile Include="Core\FreeCamera.cpp" />
+    <ClCompile Include="Core\RenderableObject.cpp" />
     <ClCompile Include="Core\Shader.cpp" />
+    <ClCompile Include="Core\TargetCamera.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Renderables\Grid.cpp" />
     <ClCompile Include="Samples\ImageLoader.cpp" />
     <ClCompile Include="Samples\Ripple.cpp" />
+    <ClCompile Include="Samples\SimpleCamera.cpp" />
     <ClCompile Include="Samples\SimpleTriangle.cpp" />
     <ClCompile Include="Samples\SubdivisionGeometry.cpp" />
     <ClCompile Include="Samples\SubdivisionGeometryInstanced.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Samples\Shaders\LoadImage_shader.frag">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\LoadImage_shader.vert">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\Ripple_shader.frag">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\Ripple_shader.vert">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SimpleTriangle_shader.frag">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SimpleTriangle_shader.vert">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.frag">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.geom">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometryInstanced_shader.vert">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometry_Shader.frag">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometry_Shader.geom">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
-    <None Include="Samples\Shaders\SubdivisionGeometry_Shader.vert">
-      <DeploymentContent>true</DeploymentContent>
-      <FileType>Script</FileType>
-    </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\CameraBase.h" />
+    <ClInclude Include="Core\FreeCamera.h" />
     <ClInclude Include="Core\Macros.h" />
+    <ClInclude Include="Core\RenderableObject.h" />
+    <ClInclude Include="Core\TargetCamera.h" />
     <ClInclude Include="Core\TRunSample.h" />
     <ClInclude Include="Core\Shader.h" />
+    <ClInclude Include="Renderables\Grid.h" />
     <ClInclude Include="Samples\ImageLoader.h" />
     <ClInclude Include="Samples\Ripple.h" />
+    <ClInclude Include="Samples\SimpleCamera.h" />
     <ClInclude Include="Samples\SimpleTriangle.h" />
     <ClInclude Include="Samples\SubdivisionGeometry.h" />
     <ClInclude Include="Samples\SubdivisionGeometryInstanced.h" />
