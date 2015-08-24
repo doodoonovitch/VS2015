@@ -12,6 +12,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+
+namespace Samples
+{
+
+
+
+
 class Ripple
 {
 public:
@@ -69,9 +76,9 @@ private:
 	//projection and modelview matrices
 	glm::mat4 _P;
 
-	Shader _shader;
+	Core::Shader _shader;
 };
 
 
-
+} // namespace Samples
 #endif // SAMPLES_SIMPLETRIANGLE_H

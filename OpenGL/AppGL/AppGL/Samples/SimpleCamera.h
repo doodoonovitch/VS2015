@@ -15,6 +15,11 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+namespace Samples
+{
+
+
+
 class SimpleCamera
 {
 public:
@@ -56,8 +61,8 @@ private:
 	float _rX = 0.f, _rY = 135.f, _dist = 0.f;
 	float _dt = 0;
 
-	Grid* _grid;
-	TargetCamera _camera;
+	Renderables::Grid* _grid;
+	Core::TargetCamera _camera;
 
 	glm::vec2 _mouseHistory[MOUSE_HISTORY_BUFFER_SIZE];
 
@@ -67,5 +72,5 @@ private:
 };
 
 
-
+} // namespace Samples
 #endif // SAMPLES_SIMPLECAMERA_H

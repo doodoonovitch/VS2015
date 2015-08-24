@@ -9,6 +9,13 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+
+namespace Core
+{
+
+
+
+
 class CameraBase
 {
 public:
@@ -48,4 +55,7 @@ protected:
 	float _fov, _aspectRatio;
 };
 
+
+
+} // namespace Core
 #endif // SAMPLES_CAMERABASE_H

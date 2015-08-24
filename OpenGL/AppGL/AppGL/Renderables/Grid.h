@@ -7,7 +7,10 @@
 #include "Core\Shader.h"
 #include "Core\RenderableObject.h"
 
-class Grid : public RenderableObject
+namespace Renderables
+{
+
+class Grid : public Core::RenderableObject
 {
 public:
 	Grid(int width=10, int depth=10);
@@ -16,4 +19,7 @@ public:
 	void Render(const float* MVP);
 };
 
+
+
+} // namespace Renderables
 #endif // SAMPLES_GRID_H

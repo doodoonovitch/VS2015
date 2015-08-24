@@ -2,6 +2,12 @@
 #include <iostream>
 
 using namespace std;
+using namespace Core;
+
+namespace Samples
+{
+
+
 
 const char* shader_vert = R"(
 #version 330 core
@@ -157,3 +163,6 @@ SimpleTriangle::SimpleTriangle()
 SimpleTriangle::~SimpleTriangle()
 {
 }
+
+
+} // namespace Samples

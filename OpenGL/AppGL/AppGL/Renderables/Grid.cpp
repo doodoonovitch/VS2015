@@ -1,6 +1,11 @@
 #include "Grid.h"
 #include <glm/glm.hpp>
 
+namespace Renderables
+{
+
+
+
 Grid::Grid(int width, int depth)
 {
 	//setup shader
@@ -82,3 +87,7 @@ void Grid::Render(const float* MVP)
 		glBindVertexArray(0);
 	_shader.UnUse();
 }
+
+
+
+} // namespace Renderables

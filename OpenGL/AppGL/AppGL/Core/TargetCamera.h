@@ -4,6 +4,12 @@
 #ifndef SAMPLES_TARGETCAMERA_H
 #define SAMPLES_TARGETCAMERA_H
 
+namespace Core
+{
+
+
+
+
 class TargetCamera :
 	public CameraBase
 {
@@ -30,5 +36,10 @@ protected:
 	float _minDistance, _maxDistance;
 
 };
+
+
+
+
+} // namespace Core
 
 #endif // SAMPLES_TARGETCAMERA_H

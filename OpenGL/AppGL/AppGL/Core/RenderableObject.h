@@ -6,6 +6,12 @@
 #include "Macros.h"
 #include "Shader.h"
 
+
+namespace Core
+{
+
+
+
 class RenderableObject
 {
 public:
@@ -20,5 +26,10 @@ protected:
 	int _totalIndices; 
 	Shader _shader;
 };
+
+
+
+
+} // namespace Core
 
 #endif // SAMPLES_RENDERABLEOBJECT_H

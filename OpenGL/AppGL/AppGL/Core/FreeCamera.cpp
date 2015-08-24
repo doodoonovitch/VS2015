@@ -1,6 +1,9 @@
 #include "FreeCamera.h"
 
 
+namespace Core
+{
+
 FreeCamera::FreeCamera()
 {
 	_translation =glm::vec3(0);
@@ -51,3 +54,7 @@ void FreeCamera::Lift(const float amount)
 {
 	_translation += (_up * amount);
 }
+
+
+
+} // namespace Core

@@ -15,6 +15,11 @@
 #include <glm/gtc/type_ptr.hpp>
 
 
+namespace Samples
+{
+
+
+
 class ImageLoader
 {
 public:
@@ -52,7 +57,7 @@ private:
 	glm::vec2 _vertices[4];
 	GLushort _indices[6];
 
-	Shader _shader;
+	Core::Shader _shader;
 
 	//texture image filename
 	const std::string _filename = "medias/Lenna.png";
@@ -60,4 +65,6 @@ private:
 
 
 
+
+} // namespace Samples
 #endif // SAMPLES_IMAGELOADER_H

@@ -13,6 +13,10 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+namespace Samples
+{
+
+
 
 class SubdivisionGeometryInstanced
 {
@@ -60,9 +64,9 @@ private:
 	glm::mat4 _M[4];
 	glm::vec4 _color[4];
 
-	Shader _shader;
+	Core::Shader _shader;
 };
 
 
-
+} // namespace Samples
 #endif // SAMPLES_SUBDIVISIONGEOMETRYINSTANCED_H

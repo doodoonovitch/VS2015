@@ -6,6 +6,13 @@
 
 #include <glm/gtx/euler_angles.hpp>
 
+
+namespace Core
+{
+
+
+
+
 TargetCamera::TargetCamera(void)
 {  
 	_right = glm::vec3(1,0,0);
@@ -91,3 +98,8 @@ void TargetCamera::Move(const float dx, const float dy)
 	_target += X + Y;
 	Update();
 }
+
+
+
+
+} // namespace Core

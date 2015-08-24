@@ -2,6 +2,14 @@
 #include <iostream>
 
 using namespace std;
+using namespace Core;
+using namespace Renderables;
+
+
+namespace Samples
+{
+
+
 
 
 void SimpleCamera::OnRender(void)
@@ -192,3 +200,7 @@ void SimpleCamera::OnIdle()
 
 	glutPostRedisplay();
 }
+
+
+
+} // namespace Samples

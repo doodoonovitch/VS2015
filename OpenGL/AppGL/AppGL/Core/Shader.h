@@ -6,6 +6,9 @@
 #include <map>
 #include <string>
 
+namespace Core
+{
+
 
 
 class Shader
@@ -34,4 +37,6 @@ private:
 
 
 
+
+} // namespace Core
 #endif // CORE_SHADER_H

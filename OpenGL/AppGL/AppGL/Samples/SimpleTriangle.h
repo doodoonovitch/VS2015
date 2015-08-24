@@ -12,6 +12,11 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+namespace Samples
+{
+
+
+
 class SimpleTriangle
 {
 public:
@@ -53,9 +58,10 @@ private:
 	glm::mat4 _P;
 	glm::mat4 _MV;
 
-	Shader _shader;
+	Core::Shader _shader;
 };
 
 
 
+} // namespace Samples
 #endif // SAMPLES_SIMPLETRIANGLE_H

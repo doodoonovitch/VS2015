@@ -5,6 +5,9 @@
 
 using namespace std;
 
+namespace Core
+{
+
 
 Shader::Shader(void)
 	: _program(0)
@@ -140,3 +143,5 @@ GLuint Shader::operator()(const std::string& uniform)
 	return _uniformLocationList[uniform];
 }
 
+
+} // namespace Core

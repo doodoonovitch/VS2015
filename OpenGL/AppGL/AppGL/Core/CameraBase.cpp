@@ -1,6 +1,12 @@
 #include "CameraBase.h" 
 #include <glm/gtx/euler_angles.hpp>
- 
+
+
+namespace Core
+{
+
+
+
 glm::vec3 CameraBase::UP = glm::vec3(0,1,0);
 
 CameraBase::CameraBase(void)
@@ -56,3 +62,6 @@ const float CameraBase::GetAspectRatio() const
 }
 
  
+
+
+} // namespace Core

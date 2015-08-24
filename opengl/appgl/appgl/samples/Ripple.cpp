@@ -2,6 +2,12 @@
 #include <iostream>
 
 using namespace std;
+using namespace Core;
+
+namespace Samples
+{
+
+
 
 const char* ripple_shader_vert = R"(
 #version 330 core
@@ -216,3 +222,5 @@ void Ripple::OnMouseMove(int x, int y)
 
 	glutPostRedisplay();
 }
+
+} // namespace Samples

@@ -3,6 +3,9 @@
 
 using namespace std;
 
+namespace Samples
+{
+
 const char* image_loader_shader_vert = R"(
 #version 330 core
   
@@ -201,3 +204,7 @@ void ImageLoader::OnMouseMove(int x, int y)
 void ImageLoader::OnKey(unsigned char key, int x, int y)
 {
 }
+
+
+
+} // namespace Samples

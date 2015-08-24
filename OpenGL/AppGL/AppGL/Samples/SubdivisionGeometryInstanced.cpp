@@ -2,6 +2,12 @@
 #include <algorithm>
 
 using namespace std;
+using namespace Core;
+
+namespace Samples
+{
+
+
 
 const char* subdivision_geometry_instanced_shader_vert = R"(
 #version 330 core
@@ -283,3 +289,7 @@ void SubdivisionGeometryInstanced::OnKey(unsigned char key, int x, int y)
 
 	glutPostRedisplay();
 }
+
+
+
+} // namespace Samples

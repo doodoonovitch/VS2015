@@ -4,6 +4,11 @@
 #ifndef SAMPLES_FREECAMERA_H
 #define SAMPLES_FREECAMERA_H
 
+namespace Core
+{
+
+
+
 class FreeCamera :	public CameraBase
 {
 public:
@@ -24,4 +29,8 @@ protected:
 	glm::vec3 _translation;
 };
 
+
+
+
+} // namespace Core
 #endif // SAMPLES_FREECAMERA_H

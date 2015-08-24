@@ -3,6 +3,10 @@
 #ifndef CORE_TRUNSAMPLE_H
 #define CORE_TRUNSAMPLE_H
 
+namespace Core
+{
+
+
 class RunSample
 {
 public:
@@ -106,5 +110,7 @@ private:
 };
 
 template <typename TSample> TSample* TRunSample<TSample>::_sampleInstance = nullptr;
+
+} // namespace Core
 
 #endif// CORE_TRUNSAMPLE_H

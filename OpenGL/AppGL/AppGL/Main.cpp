@@ -11,6 +11,9 @@
 #include "Samples\SimpleCamera.h"
 
 using namespace std;
+using namespace Core;
+using namespace Samples;
+
 
 int main(int argc, char **argv)
 {
