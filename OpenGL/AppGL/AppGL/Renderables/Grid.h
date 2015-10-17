@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef SAMPLES_GRID_H
-#define SAMPLES_GRID_H
+#ifndef RENDERABLES_GRID_H
+#define RENDERABLES_GRID_H
 
 #include "Core\Macros.h"
 #include "Core\Shader.h"
@@ -22,4 +22,4 @@ public:
 
 
 } // namespace Renderables
-#endif // SAMPLES_GRID_H
+#endif // RENDERABLES_GRID_H

@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Fichiers d%27en-tête">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Fichiers de ressources">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -21,6 +17,9 @@
     </Filter>
     <Filter Include="Fichiers sources\Renderables">
       <UniqueIdentifier>{889f54cc-81e6-4edb-a5b0-c26a6c01b4a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Tools">
+      <UniqueIdentifier>{32b15436-9741-41c3-8711-30842558e92b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +61,12 @@
     </ClCompile>
     <ClCompile Include="Samples\SimpleCamera.cpp">
       <Filter>Fichiers sources\Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderables\CrossHair.cpp">
+      <Filter>Fichiers sources\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\EzmLoader.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +114,12 @@
     </ClInclude>
     <ClInclude Include="Samples\SimpleCamera.h">
       <Filter>Fichiers sources\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderables\CrossHair.h">
+      <Filter>Fichiers sources\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\EzmLoader.h">
+      <Filter>Fichiers sources\Tools</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
